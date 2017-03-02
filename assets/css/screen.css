@@ -428,6 +428,8 @@ img {
       margin: 10px 25px 8px;
       padding: 5px 0;
       color: white; }
+      .mobile-menu > li > a:hover {
+        color: #ff614c; }
       .mobile-menu > li > a:after {
         position: absolute;
         content: '';
