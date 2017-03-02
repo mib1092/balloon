@@ -7,7 +7,7 @@
   padding-bottom: 70px;
   min-height: 700px;
   @include bg();
-  background-color: $color-bg3;
+  background-color: $color-bg-banner;
 }
   .banner-text-box,
   .banner-img-box {
@@ -89,7 +89,7 @@
 .section-services {
   text-align: center;
   @include bg();
-  background-color: $color-bg3;
+  background-color: $color-bg-banner;
   .box-title,
   .content {
     max-width: 770px;
