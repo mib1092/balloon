@@ -424,9 +424,8 @@ img {
     display: block; }
     .mobile-menu > li > a {
       position: relative;
-      display: inline-block;
-      margin: 10px 25px 8px;
-      padding: 5px 0;
+      display: block;
+      padding: 12px 25px 18px;
       color: white; }
       .mobile-menu > li > a:hover {
         color: #ff614c; }
@@ -575,7 +574,8 @@ img {
   min-height: 700px;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #1d4d94; }
 
 .banner-text-box,
 .banner-img-box {
@@ -620,9 +620,7 @@ img {
     background-color: #ff4948; }
 
 .product-list {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-bottom: -40px; }
+  margin: 40px -20px -40px; }
   .product-list > li {
     display: inline-block;
     margin-bottom: 40px;
@@ -662,7 +660,8 @@ img {
   text-align: center;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #1d4d94; }
   .section-services .box-title,
   .section-services .content {
     max-width: 770px;
@@ -773,6 +772,9 @@ img {
     .footer-list > li.right-box {
       width: 100%; }
 
+  .copyright {
+    opacity: 1; }
+
   .contact-list > li {
     margin-right: 40px; }
     .contact-list > li:after {
@@ -781,15 +783,26 @@ img {
   .product-list > li {
     width: 100%; } }
 @media all and (max-width: 860px) {
+  .section-page-banner {
+    position: relative; }
+
   .banner-text-box, .banner-img-box {
     width: 100%; }
 
   .banner-img-box {
     float: none;
-    margin: 0 auto 40px; }
+    margin: 0 auto 40px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1; }
 
   .banner-text-box {
-    margin: 0 auto; } }
+    position: relative;
+    margin: 0 auto 200px;
+    z-index: 2; } }
 @media all and (max-width: 640px) {
   .footer-list > li.left-box {
     margin-bottom: 0; }

@@ -7,6 +7,7 @@
   padding-bottom: 70px;
   min-height: 700px;
   @include bg();
+  background-color: $color-bg3;
 }
   .banner-text-box,
   .banner-img-box {
@@ -51,9 +52,7 @@
 
 .section-products {}
   .product-list {
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-bottom: -40px;
+    margin: 40px -20px -40px;
     > li {
       display: inline-block;
       margin-bottom: 40px;
@@ -90,6 +89,7 @@
 .section-services {
   text-align: center;
   @include bg();
+  background-color: $color-bg3;
   .box-title,
   .content {
     max-width: 770px;

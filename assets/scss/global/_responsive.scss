@@ -114,6 +114,9 @@
       }
     }
   }
+  .copyright {
+    opacity: 1;
+  }
   .contact-list {
     > li {
       margin-right: 40px;
@@ -131,15 +134,26 @@
 }
 
 @media all and (max-width: 860px) {
+  .section-page-banner {
+    position: relative;
+  }
   .banner-text-box, .banner-img-box {
     width: 100%;
   }
   .banner-img-box {
     float: none;
     margin: 0 auto 40px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
   }
   .banner-text-box {
-    margin: 0 auto;
+    position: relative;
+    margin: 0 auto 200px;
+    z-index: 2;
   }
 }
 
