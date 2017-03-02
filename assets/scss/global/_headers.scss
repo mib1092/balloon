@@ -20,19 +20,21 @@
     opacity:1;
   }
   &.scrolling {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: rgba(0 ,0 ,0 ,0.5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(118, 182, 225, 0.8);
     -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
     .logo {
-      max-width: 140px;
+      max-width: 180px;
+      position: relative;
+      top: 3px;
     }
     .main-nav > ul {
       float: right;
-      margin-top: 18px;
+      margin-top: 32px;
     }
   }
 }
@@ -91,12 +93,13 @@
 }
 .mobile-menu-box {
   position: absolute;
-  width: 100%;
+  width: 320px;
+  max-width: 85%;
   height: 100%;
   right: -100%;
   z-index: 2;
   padding-bottom: 100px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #8ec4e6;
   -webkit-transition: right 0.35s;
   -moz-transition: right 0.35s;
   -o-transition: right 0.35s;
@@ -114,9 +117,9 @@
 .mobile-menu-toggle {
   position: absolute;
   right: 0;
-  top: -5px;
-  height: 75px;
-  width: 75px;
+  top: -9px;
+  height: 83px;
+  width: 83px;
   vertical-align: middle;
   cursor: pointer;
   font-size: 26px;
@@ -130,7 +133,7 @@
     height: 3px;
     width: 30px;
     @include border-radius(2px);
-    background-color: $color-bg2;
+    background-color: $color-bg1;
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     -o-transition: all 0.35s;
