@@ -158,8 +158,15 @@
   }
 }
 
-@media all and (max-width: 790px) {
-
+@media all and (max-width: 782px) {
+  .admin-bar {
+    .header {
+      top: 46px;
+    }
+    .mobile-menu-wrap {
+      top: 129px;
+    }
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -218,6 +225,14 @@
     float: none;
     margin: 0 auto 20px;
     width: 100%;
+  }
+  .admin-bar {
+    .header.scrolling {
+      top: 0;
+      .mobile-menu-wrap {
+        top: 83px;
+      }
+    }
   }
 }
 
