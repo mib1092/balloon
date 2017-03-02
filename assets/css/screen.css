@@ -842,13 +842,13 @@ img {
 @media all and (max-width: 600px) {
   .cell-img-box {
     float: none;
+    overflow: hidden;
     max-width: 100%;
     width: 100%; }
-
-  .cell-img-box img {
-    float: left;
-    display: block;
-    max-width: 50%; }
+    .cell-img-box img {
+      float: left;
+      display: block;
+      max-width: 50%; }
 
   .about-img-box {
     float: none;
