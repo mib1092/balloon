@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
 	//header background on scroll
 	var header = $('#header');
-	$(window).on('scroll', function() {
+	$(window).on('load scroll resize', function() {
 	   var st2 = $(this).scrollTop();
 		   		
 	   if (st2 > 0) {
