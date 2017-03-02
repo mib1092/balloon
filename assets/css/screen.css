@@ -207,6 +207,22 @@ img {
     width: 100%;
     height: 130px; }
 
+.content-wrap {
+  padding: 170px 0 70px; }
+
+.wrap-404 {
+  text-align: center;
+  padding: 10px 0 40px;
+  color: #ff614c;
+  font-size: 68px;
+  letter-spacing: 0; }
+  .wrap-404 .error-404 {
+    display: block;
+    margin-bottom: -26px;
+    font-size: 200px;
+    line-height: 1;
+    font-weight: 700; }
+
 .header {
   position: fixed;
   z-index: 1000;
@@ -843,5 +859,12 @@ img {
     top: 0; }
     .admin-bar .header.scrolling .mobile-menu-wrap {
       top: 83px; } }
+@media all and (max-width: 480px) {
+  .wrap-404 {
+    padding: 0 0 10px;
+    font-size: 45px; }
+    .wrap-404 .error-404 {
+      margin-bottom: -18px;
+      font-size: 140px; } }
 
 /*# sourceMappingURL=screen.css.map */
