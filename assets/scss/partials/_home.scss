@@ -65,7 +65,7 @@
       .cell-box {
         overflow: hidden;
         background-color: $color-bg5;
-        @include border-radius($radius-main);
+        @include border-radius($radius-small);
       }
         .cell-img-box {
           float: left;
