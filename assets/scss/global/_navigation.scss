@@ -24,9 +24,11 @@
       text-transform: uppercase;
       color: $white;
       @include border-radius($radius-main);
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.2);
-      }
+    }
+    & a:hover,
+    &.active > a,
+    &.current-menu-item > a {
+      background-color: rgba(0, 0, 0, 0.2);
     }
   }
 }

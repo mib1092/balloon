@@ -1,4 +1,5 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function($) {
+
 	// header fade
 	$(function() {
 	   var header = $('#header');
@@ -36,4 +37,32 @@ jQuery(document).ready(function( $ ) {
 		$('.mobile-menu-wrap').toggleClass('showing');
 		$(document.body).toggleClass('overflow');
 	});
+
+    // scroll active link
+    var arrayAnchorBlock = $('.anchor-js');
+    $(window).on('scroll', function(){
+        var curPositionWindow = $(window).scrollTop(),
+            curClickElement = $('.main-nav a');
+
+        var arrayValuesPosAnchorElems = [];
+
+        arrayAnchorBlock.each(function(){
+            arrayValuesPosAnchorElems.push($(this).offset().top - 75);
+        });
+
+        arrayValuesPosAnchorElems.forEach(function(element, index){
+            if(curPositionWindow >= element - 150) {
+                curClickElement
+                    .parent()
+                    .eq(index)
+                    .addClass('active')
+                    .siblings()
+                    .removeClass('active');
+            }
+            else if(curPositionWindow < arrayValuesPosAnchorElems[0]) {
+                curClickElement.parent().removeClass('active');
+            }
+        });
+    });
+
 });
