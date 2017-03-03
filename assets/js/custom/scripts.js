@@ -65,16 +65,14 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $('.section-services').parallax({
-        speed: 0.5
-    });
+    $('.section-services').parallax({ speed: 0.5 });
 
     function  animation() {
         //set duration for animation
         var duraion = 0.5,
             duraionHero = 1;
         //set offset
-         var offset = 255;
+         var offset = 60;
 
         // Init ScrollMagic Controller
         var scrollMagicController = new ScrollMagic();
