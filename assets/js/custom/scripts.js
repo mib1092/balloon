@@ -73,6 +73,8 @@ jQuery(document).ready(function($) {
         //set duration for animation
         var duraion = 0.5,
             duraionHero = 1;
+        //set offset
+         var offset = 255;
 
         // Init ScrollMagic Controller
         var scrollMagicController = new ScrollMagic();
@@ -87,13 +89,13 @@ jQuery(document).ready(function($) {
             tweenAboutUsText = [TweenMax.from('.about-animation-text', duraion, { x: 50, autoAlpha: 0}, '-=1')];
 
         // Create the Scene and trigger when visible
-        var scene = new ScrollScene({triggerElement: '.banner-animation-img', triggerHook: 1, offset: 255, reverse:false}).setTween(bannerAnimationImg).addTo(scrollMagicController);
-        var scene = new ScrollScene({triggerElement: '.banner-animation-text', triggerHook: 1, offset: 255, reverse:false}).setTween(bannerAnimationText).addTo(scrollMagicController);
-        var scene = new ScrollScene({triggerElement: '.product-animation-left', triggerHook: 1, offset: 255, reverse:false}).setTween(tweenProductsLeft).addTo(scrollMagicController);
-        var scene = new ScrollScene({triggerElement: '.product-animation-right', triggerHook: 1, offset: 255, reverse:false}).setTween(tweenProductsRight).addTo(scrollMagicController);
-        var scene = new ScrollScene({triggerElement: '.services-animation', triggerHook: 1, offset: 255, reverse:false}).setTween(tweenServices).addTo(scrollMagicController);
-        var scene = new ScrollScene({triggerElement: '.about-animation-img', triggerHook: 1, offset: 255, reverse:false}).setTween(tweenAboutUsImg).addTo(scrollMagicController);
-        var scene = new ScrollScene({triggerElement: '.about-animation-text', triggerHook: 1, offset: 255, reverse:false}).setTween(tweenAboutUsText).addTo(scrollMagicController);
+        var scene = new ScrollScene({triggerElement: '.banner-animation-img', triggerHook: 1, offset: offset, reverse:false}).setTween(bannerAnimationImg).addTo(scrollMagicController);
+        var scene = new ScrollScene({triggerElement: '.banner-animation-text', triggerHook: 1, offset: offset, reverse:false}).setTween(bannerAnimationText).addTo(scrollMagicController);
+        var scene = new ScrollScene({triggerElement: '.product-animation-left', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenProductsLeft).addTo(scrollMagicController);
+        var scene = new ScrollScene({triggerElement: '.product-animation-right', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenProductsRight).addTo(scrollMagicController);
+        var scene = new ScrollScene({triggerElement: '.services-animation', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenServices).addTo(scrollMagicController);
+        var scene = new ScrollScene({triggerElement: '.about-animation-img', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenAboutUsImg).addTo(scrollMagicController);
+        var scene = new ScrollScene({triggerElement: '.about-animation-text', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenAboutUsText).addTo(scrollMagicController);
 
     }
 
