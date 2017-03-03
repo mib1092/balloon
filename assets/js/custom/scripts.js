@@ -65,37 +65,24 @@ jQuery(document).ready(function($) {
         });
     });
 
-    //animation section-products
-    // Init ScrollMagic Controller
-    var scrollMagicController = new ScrollMagic();
+    var duraion = 0.5;
 
-    // Create Animation
-    var tween =[ TweenMax.from('.banner-animation-1', 1, { scale: 0, autoAlpha: 0}, '-=1') ];
-
-    // Create the Scene and trigger when visible
-    var scene = new ScrollScene({
-        triggerElement: '#banner',
-        triggerHook: 1,
-        //duration: winHeight,
-        offset: 255 /* offset the trigger 150px below #scene's top */
-    })
-        .setTween(tween)
-        .addTo(scrollMagicController);
 
     //animation section-products
     // Init ScrollMagic Controller
     var scrollMagicController = new ScrollMagic();
 
     // Create Animation
-    var tween =[ TweenMax.from('.product-animation-1', 1, { scale: 0.6, x: -50, autoAlpha: 0}, '-=1'),
-        TweenMax.from('.product-animation-2', 1, { scale: 0.6, x: 50, autoAlpha: 0}, '-=1')];
+    var tween =[ TweenMax.from('.product-animation-1', duraion, { scale: 0.6, x: -50, autoAlpha: 0}, '-=1'),
+        TweenMax.from('.product-animation-2', duraion, { scale: 0.6, x: 50, autoAlpha: 0}, '-=1')];
 
     // Create the Scene and trigger when visible
     var scene = new ScrollScene({
         triggerElement: '#products',
         triggerHook: 1,
         //duration: winHeight,
-        offset: 255 /* offset the trigger 150px below #scene's top */
+        offset: 255, /* offset the trigger 150px below #scene's top */
+		reverse:false
     })
         .setTween(tween)
         .addTo(scrollMagicController);
@@ -105,14 +92,15 @@ jQuery(document).ready(function($) {
     var scrollMagicController = new ScrollMagic();
 
     // Create Animation
-    var tween =[ TweenMax.from('.services-animation-1', 1, { scale: 0.6, autoAlpha: 0}, '-=1')];
+    var tween =[ TweenMax.from('.services-animation-1', duraion, { scale: 0.6, autoAlpha: 0}, '-=1')];
 
     // Create the Scene and trigger when visible
     var scene = new ScrollScene({
         triggerElement: '#services',
         triggerHook: 1,
         //duration: winHeight,
-        offset: 255 /* offset the trigger 150px below #scene's top */
+        offset: 255, /* offset the trigger 150px below #scene's top */
+		reverse:false
     })
         .setTween(tween)
         .addTo(scrollMagicController);
@@ -122,15 +110,16 @@ jQuery(document).ready(function($) {
     var scrollMagicController = new ScrollMagic();
 
     // Create Animation
-    var tween =[ TweenMax.from('.about-animation-1', 1, { scale: 0, autoAlpha: 0}, '-=1'),
-        TweenMax.from('.about-animation-2', 1, { x: 50, autoAlpha: 0}, '-=1')];
+    var tween =[ TweenMax.from('.about-animation-1', duraion, { scale: 0, autoAlpha: 0}, '-=1'),
+        TweenMax.from('.about-animation-2', duraion, { x: 50, autoAlpha: 0}, '-=1')];
 
     // Create the Scene and trigger when visible
     var scene = new ScrollScene({
         triggerElement: '#about-us',
         triggerHook: 1,
         //duration: winHeight,
-        offset: 255 /* offset the trigger 150px below #scene's top */
+        offset: 255, /* offset the trigger 150px below #scene's top */
+		reverse:false
     })
         .setTween(tween)
         .addTo(scrollMagicController);
