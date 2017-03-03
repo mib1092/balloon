@@ -676,11 +676,7 @@ img {
 
 .section-services {
   text-align: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #5f8fd7;
-  background-attachment: fixed; }
+  background: transparent; }
   .section-services .box-title,
   .section-services .content {
     max-width: 770px;

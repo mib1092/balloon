@@ -65,6 +65,10 @@ jQuery(document).ready(function($) {
         });
     });
 
+    $('.section-services').parallax({
+        speed: 0.5
+    });
+
     function  animation() {
         //set duration for animation
         var duraion = 0.5,

@@ -88,9 +88,7 @@
 
 .section-services {
   text-align: center;
-  @include bg();
-  background-color: $color-bg-banner;
-  background-attachment: fixed;
+  background: transparent;
   .box-title,
   .content {
     max-width: 770px;
