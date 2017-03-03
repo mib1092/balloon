@@ -8,6 +8,7 @@ jQuery(document).ready(function($) {
 	   },800);
 	});
 
+
 	//header background on scroll
 	var header = $('#header');
 	$(window).on('load scroll resize', function() {
@@ -23,6 +24,7 @@ jQuery(document).ready(function($) {
 
 	});
 
+
     // for smooth scroll
 	smoothScroll.init({
 		selector: 'a', // Selector for links (must be a class, ID, data attribute, or element tag)
@@ -31,12 +33,14 @@ jQuery(document).ready(function($) {
 		offset: 100 // Integer. How far to offset the scrolling anchor location in pixels
 	});
 
+
 	// for burger menu
 	$('.mobile-menu-toggle, .mobile-menu-overlay').on('click', function(){
 		$('.mobile-menu-toggle').toggleClass('active');
 		$('.mobile-menu-wrap').toggleClass('showing');
 		$(document.body).toggleClass('overflow');
 	});
+
 
     // scroll active link
     var arrayAnchorBlock = $('.anchor-js');
@@ -65,8 +69,12 @@ jQuery(document).ready(function($) {
         });
     });
 
+
+    // for Parallax
     $('.section-services').parallax({ speed: 0.5 });
 
+
+    // for animations
     function  animation() {
         //set duration for animation
         var duraion = 0.5,
@@ -79,7 +87,7 @@ jQuery(document).ready(function($) {
 
         // Create Animation for section-products
         var bannerAnimationImg = [TweenMax.from('.banner-animation-img', duraionHero, { scale: 0, autoAlpha: 0}, '-=1')],
-            bannerAnimationText = [TweenMax.from('.banner-animation-text', duraionHero, { x: -50, autoAlpha: 0}, '-=1')],
+            bannerAnimationText = [TweenMax.from('.banner-animation-text', duraionHero, { x: -100, autoAlpha: 0}, '-=1')],
             tweenProductsLeft = [TweenMax.from('.product-animation-left', duraion, { scale: 0.6, x: -50, autoAlpha: 0}, '-=1')],
             tweenProductsRight = [TweenMax.from('.product-animation-right', duraion, { scale: 0.6, x: 50, autoAlpha: 0}, '-=1')],
             tweenServices = [TweenMax.from('.services-animation', duraion, { scale: 0.6, autoAlpha: 0}, '-=1')],
@@ -94,9 +102,7 @@ jQuery(document).ready(function($) {
         var scene = new ScrollScene({triggerElement: '.services-animation', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenServices).addTo(scrollMagicController);
         var scene = new ScrollScene({triggerElement: '.about-animation-img', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenAboutUsImg).addTo(scrollMagicController);
         var scene = new ScrollScene({triggerElement: '.about-animation-text', triggerHook: 1, offset: offset, reverse:false}).setTween(tweenAboutUsText).addTo(scrollMagicController);
-
     }
-
     animation();
 
 });
