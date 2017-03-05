@@ -50,9 +50,42 @@
         }
       }
 
-.section-products {}
+.section-products {
+  &.section {
+    padding-bottom: 0;
+  }
+  .products-contact {
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+    color: $white;
+    @include transition($transition-other);
+    @include css3-prefix('transition-delay', $transition-other);
+    .contact-list {
+      display: none;
+      padding: 5px 0;
+      li {
+        text-align: left;
+      }
+      a {
+        color: $white;
+        &:hover {
+          text-decoration: none;
+          opacity: 0.7;
+        }
+      }
+    }
+    &.open {
+      background-color: $color-bg2;
+    }
+  }
+  .btn {
+    position: relative;
+    top: -20px;
+  }
+}
   .product-list {
-    margin: 40px -20px -40px;
+    margin: 40px -20px 0;
     > li {
       display: inline-block;
       margin-bottom: 40px;
@@ -61,6 +94,7 @@
       vertical-align: top;
     }
   }
+
       .cell-box {
         overflow: hidden;
         background-color: $color-bg5;

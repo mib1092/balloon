@@ -42,6 +42,15 @@ jQuery(document).ready(function($) {
 	});
 
 
+	// for Products contact-box
+    $(".btn-js").on("click touch", function () {
+        $(this).parents(".products-contact").addClass("open");
+        $(this).fadeOut(350, function(){
+            $(this).siblings(".contact-list").fadeIn(350);
+        });
+    });
+
+
     // scroll active link
     var arrayAnchorBlock = $('.anchor-js');
     $(window).on('scroll', function(){
